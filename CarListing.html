@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\user\Desktop\tp_DAW\Projet\CarListStyle.css">
+</head>
+<body>
+    <header >
+    
+        <img class="logo" src="C:\Users\user\Desktop\tp_DAW\Projet\Carsella (2).svg"  alt="logo" width="95px">
+        
+        <nav class="navbar">
+           
+                <a href="http://">Home</a></li>
+                <a href="http://">Shop</a></li>
+                <a href="http://">Sell Yours</a></li>
+                <a href="http://">Contact Us </a></li>
+            
+        </nav>
+       
+     </header>
+     <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        } )
+    </script>
+
+    <br><br><br>
+<main>
+    <aside id="filter-group">
+        
+        <div id="filters">
+            <h2>Use a filter?</h2>
+            <div class="type-btn"><button>Classic</button>
+                <button>Modern</button></div>
+            <div class="Brand">
+                <h3>Brand</h3>
+                <input type="checkbox" name="Brand" value="audi">
+                <label for="audi">Audi</label>
+            </div>
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="mercedes">
+                <label for="mercedes">Mercedes</label>
+            </div>
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="mercedes">
+                <label for="mercedes">Mercedes</label>
+            </div>
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="BMW">
+                <label for="BMW">BMW</label>
+            </div>
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="Toyota">
+                <label for="Toyota">Toyota</label>
+            </div>
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="nisaan">
+                <label for="nisaan">Nisaan</label>
+            </div>
+            
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="renault">
+                <label for="renault">Renault</label>
+            </div>
+            
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="peugeot">
+                <label for="peugeot">Peugeot</label>
+            </div>
+            
+            <div class="Brand">
+                <input type="checkbox" name="Brand" value="lexus">
+                <label for="lexus">Lexus</label>
+            </div>
+    
+            <br>
+            <div class="type">
+                <h3>Type </h3>
+                <input type="checkbox" name="type" value="sedan">
+                <label for="sedan">Sedans</label>
+            </div>
+            <div class="type">
+                <input type="checkbox" name="type" value="suv">
+                <label for="suv">suv</label>
+            </div>
+            <div class="type">
+                <input type="checkbox" name="type" value="berlines">
+                <label for="berlines">berlines</label>
+            </div>
+            <div class="type">
+                <input type="checkbox" name="type" value="4x4">
+                <label for="4x4">4x4</label>
+            </div>
+            <br>
+            <div class="Transmission">
+                <h3>Transmission</h3>
+                <input type="checkbox" name="transmission" value="manual">
+                <label for="manual">manual</label>
+                <input type="checkbox" name="transmission" value="automatic">
+                <label for="automatic">automatic</label>
+            </div>
+            <br>
+            <label for="year-select">Year:</label>
+            <select id="year-select">
+            <option value="">Select year</option>
+            <option value="2000-05">2000-05</option>
+            <option value="2005-10">2005-10</option>
+            <option value="2010-15">2010-15</option>
+            <option value="2015-20">2015-20</option>
+            <option value="2020-24">2020-24</option>
+            </select>   
+            <h2>Or</h2>
+                <input type="text" id="search-input" placeholder="Search cars...">
+                <button id="search-button">Search</button>
+        </div>    
+    </aside>
+    <section id="car-cards"> 
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$    bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+</div><div class="car-cards">
+    <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+    <p>165025$</p>
+</div>
+</div><div class="car-cards">
+    <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+    <p>165025$</p>
+</div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$   bmw m5 competition</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    <div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div><div class="car-cards">
+        <img src="C:\Users\user\Desktop\tp_DAW\Projet\porshe-2.jpg" alt="">
+        <p>165025$</p>
+    </div>
+    </section>
+</main>
+
+    <footer class="footer">
+    <div class="container">
+       <div  class="row">
+           <div class="footer-col">
+               <h4>Company</h4>
+               <ul>
+                   <li><a href="http://">About Us</a></li>
+                   <li><a href="http://">Our Services</a></li>
+                   <li><a href="http://">Privacy Policy</a></li>
+                   <li><a href="http://">Affiliate Program</a></li>
+
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Get Help</h4>
+               <ul>
+                   <li><a href="http://">FAQs</a></li>
+                   <li><a href="http://">Shippings</a></li>
+                   <li><a href="http://">Returns</a></li>
+                   <li><a href="http://">Order status</a></li>
+                   <li><a href="http://">Payment options</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Online Shop</h4>
+               <ul>
+                   <li><a href="http://">Classic cars</a></li>
+                   <li><a href="http://">Modern cars</a></li>
+
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Follow Us</h4>
+               <div class="social-links">
+                  
+                <a href="http://"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mercedesbenz/"><i class="fab fa-instagram"></i></a>
+                <a href="http://"><i class="fab fa-linkedin-in"></i></a>
+
+               </div>
+               
+       </div>
+      
+    </div>
+   
+</div>
+</footer>
+</body>
+
+</html>

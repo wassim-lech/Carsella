@@ -1,0 +1,1 @@
+const  boxfile = document.getElementsByClassName(box-file) ;
