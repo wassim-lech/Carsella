@@ -63,7 +63,64 @@ header.sticky
     width: 100%;
     color: rgb(192, 130, 16);
 }
+#slider {
+  padding-top: 200px;
+  padding-left: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.slider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  display: none; /* Hide all images initially */
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+
+.slides img.show {
+  display: block; /* Show only the visible images */
+}
+
+.slider button{
+
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  margin: 50px;
+  padding: 10px 15px;
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  }
+  .prev{
+  left: 0;
+  }
+  
+  .next{
+  right: 0;
+  }
+  @keyframes fade {
+  from {opacity: .5;}
+  to {opacity: 1;}
+  }  
 main{
     margin-top: 180px;
     display: grid ;

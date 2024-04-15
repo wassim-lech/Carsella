@@ -236,7 +236,7 @@ ul{
     border: rgb(138, 133, 95) dashed 2px;
 }
 
-.box-elements input[type="file"] {
+.box-elements input[type="file"] {  
 
     width:600px ;
     height: 300px;
