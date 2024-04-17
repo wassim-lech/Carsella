@@ -8,12 +8,9 @@
 body {
     background-color:#a39e79;
     max-height: 3000px;
-    background: url(porshe-2.jpg);    
+    background: url('porsche-911-turbo-s2.jpg') no-repeat;    
     background-size: cover;
-    background-position: 0%;
-    padding: auto;
-    justify-content: space-between;
-    background-position-x: center;
+    background-position: center;
 
 }
 #image{
@@ -42,7 +39,7 @@ header{
 header.sticky
 {
   padding: 6px 100px;
-  background:#7e6a57;
+  background:rgba(0, 0, 0, 70%);
   transition: .5s;
 
 }
@@ -87,7 +84,7 @@ ul{
     list-style:none;
 }
 .footer{
-    background-color:#594b3d;
+    background-color:#2e2c2a;
     padding: 70px 0;
 }
 .footer-col{
@@ -194,7 +191,10 @@ ul{
     backdrop-filter:blur(20px);
     box-shadow: 10px 10px 0 #7e6a57;
     align-items: center;
-
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 #contact .box-elements{

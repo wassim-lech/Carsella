@@ -1,7 +1,7 @@
 const slides = document.querySelector(".slides");
 const slideImages = document.querySelectorAll(".slides img");
 let slideIndex = 0;
-let visibleSlides = 5;
+let visibleSlides = 10;
 let intervalId = null;
 
 document.addEventListener("DOMContentLoaded", initializeSlider);
@@ -24,6 +24,18 @@ function showSlides(index) {
       img.classList.remove("show");
     }
   });
+
+  // Center the slides
+  centerSlides();
+}
+
+function centerSlides() {
+  const sliderWidth = document.querySelector(".slider").offsetWidth;
+  const slidesWidth = slides.scrollWidth;
+  const maxScrollLeft = slidesWidth - sliderWidth;
+  const centerOffset = maxScrollLeft / 2;
+
+  slides.style.transform = `translateX(-${centerOffset}px)`;
 }
 
 function prevSlide() {

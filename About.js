@@ -1,6 +1,6 @@
 function toggleNavbar() {
     const navWrapper = document.querySelector('.nav-wrapper');
-    const isScrolled = window.scrollY > 500; // adjust the threshold value as needed
+    const isScrolled = window.scrollY > 500; 
   
     if (isScrolled) {
       navWrapper.classList.add('visible');

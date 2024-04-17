@@ -10,6 +10,8 @@
   font-family: "Poppins", sans-serif;
 }
 body{
+    
+    background-color: hwb(0 28% 69%);
 }
 .container{
     display: flex;
