@@ -8,7 +8,7 @@
 }
 body
 {
-  background-color:#a39e79;
+  background-color:#2b2726;
   max-height: 2500px;
 }
 header{
@@ -137,7 +137,7 @@ ul{
   list-style:none;
 }
 .footer{
-  background-color: darkolivegreen;
+  background-color:#2e2c2a;
   padding: 70px 0;
 
 }
@@ -186,13 +186,14 @@ padding-left: 10px;
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: #BC6C25;
+  
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: lemonchiffon;
- transition: all 0.3s ease;
+  color: #594b3d;
+  background-color: khaki;
+   transition: all 0.3s ease;
 
 }
 .footer-col .social-links a:hover{
