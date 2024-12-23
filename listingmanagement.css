@@ -1,0 +1,454 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:#2b2726;
+}
+
+.container{
+    display: flex;
+    width: 1200px;
+}
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 100vh;
+    background:#453e3d;
+}
+  .navbar{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo{
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .logo h1{
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color:rgb(199,196,170);
+  }
+  ul{
+    margin: 0 auto;
+  }
+  li{
+    padding-bottom: 1.5rem;
+  }
+  li a{
+    font-size: 16px;
+    color:rgb(199,196,170);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item{
+    position: relative;
+    margin-left: 10px;
+  }
+  nav i{
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+  }
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    padding-left: 10px;
+}
+
+section{
+    position: absolute;
+    z-index: -1;
+    left: 300px;
+    width: 60%;
+    height:100vh;
+}
+.boxes{
+    position: relative;
+    width: 800px;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    left: 33px;
+}
+.box{
+    background-color:  #f3f3f3;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 90px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: #594b3d 2px 2px 4px;
+}
+.box .ttl{
+    position: relative;
+    width: 120px;
+    height:18px ;
+    top:10px;
+    left: 5px;
+}
+.box .ttl p{
+    position: relative;
+    top:-25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.box .imag{
+    position: relative;
+    top:18px;
+}
+.imag img{
+    width: 45px;
+}
+.box .ttl,.imag{
+    display: inline-block;
+    padding: 2px;
+}
+.box .num{
+    position: relative;
+    width: 100px;
+    height: fit-content;
+    top: -8px;
+    left: 20px;
+}
+.box .num p{
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(0, 0, 0);
+}
+
+#title{
+    position:relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 20px;
+    width: 350px;
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    color: #8b8b8b;
+}
+.sellist{
+    position: relative;
+    width:870PX;
+    height:600px;
+    background-color:#f3f3f3 ;
+    border-radius: 5px;
+    left: 8px;
+    box-shadow:  #594b3d 2px 2px 4px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.sellist table {
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #f4f4f4;
+    margin: 20px;
+    top: 0px;
+}
+.sellist th{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    padding-top: 15px;
+    background-color: #dcdcdc;
+}
+.sellist th, td {
+    text-align: center;
+    border: 2px solid #f3f3f3 ; 
+    padding: 15px;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
+.sellist td{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+}
+.sellist #name,#Location,#View{
+    width: 160px;
+}
+.sellist #E-mail{
+    width: 345px;
+}
+td button{
+    width: 80px;
+    height: 30px;
+    background-color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+.sellist td a{
+        text-decoration: none;
+        color: #ffffff;
+}
+td button:hover{
+    background-color:#656565;
+    letter-spacing: 3px;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0,0,0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    top: -50px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.wrapper .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.wrapper .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+
+#slider{
+    position:relative;
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    right: 20px;
+}
+#slider input[type=radio]{
+    display: none; /* what does none means ? */
+}
+#slider label{
+    cursor: pointer;
+    text-decoration: none;
+}
+#slides{
+    position: absolute;
+    top: 40px;
+    padding: 5px;
+    position: relative;
+    z-index: 3;
+}
+#overflow{
+    width: 100%;
+    overflow: hidden; /*what is overflow ? */
+}
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;  
+}
+#slide2:checked ~ #slides .inner{
+    margin-left: -100%;  
+}
+#slide3:checked ~ #slides .inner{
+    margin-left: -200%;  
+}
+#slide4:checked ~ #slides .inner{
+    margin-left: -300%;  
+}
+#slides .inner{
+    transition: margin-left 0ms cubic-bezier(0.770,0.000,0.175,1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+#slides .slide{
+    width: 25%;
+    float: left;
+    display: block;
+    height: 100%;
+    color: #000000;
+}
+#slides .slide-1{
+    background: transparent;
+}
+#slides .slide-2{
+    background: transparent
+}
+#slides .slide-3{
+    background: transparent;
+}
+#slides .slide-4{
+    background: transparent;
+}
+.slide-content{
+    padding: 10px;
+}
+#slides .slide-1 img{
+   width: 100%;
+}
+#slides .slide-2 img{
+    width: 100%;
+}
+#slides .slide-3 img{
+    width: 100%;
+}
+#slides .slide-4 img{
+    width: 100%;
+}
+#controls{
+    margin: -130px 0 0 0 ;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: -4;
+}
+#controls label:hover{
+    opacity: 1;
+}
+#right-side{
+    position: relative;
+    z-index: 3;
+    float: right;
+    top:-195px;
+    left: 20px;
+    width: 30px;
+}
+#left-side{
+    position: relative;
+    z-index: 3;
+    float: left;
+    top: -195px;
+    right: 20px;
+    width: 30px;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1){
+    position: relative;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+    top:-195px;
+    left: 10px;
+    width:40px ;
+    height: 20px;
+}
+#slide1:checked ~ #controls label:nth-child(4),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3){
+    position: relative;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+    top: -195px;
+    right: 10px;
+    width:40px ;
+    height: 20px;
+}
+.cardetails .btn{
+    position: relative;
+    display: inline-block;
+    top: 100px;
+    padding: 20px;
+}
+.cardetails .btn button{
+    width: 130px;
+    height: 50px;
+    transition: all ease-in-out 0.3s;
+}
+.cardetails .btn button[type="submit"]{
+    margin-right: 135px;
+}
+.cardetails .btn button[type="reset"]:hover{
+    background-color: #a43f3f;
+    color: #dcdcdc;
+}
+.cardetails .btn button[type="submit"]:hover{
+    background-color: #3fa449;
+    color: #dcdcdc;
+}
+
+.cardetails{
+    width :450px;
+    height: 300px;
+    background-color:#dcdcdc;
+    border-radius: 5px;
+    padding: 0px;
+}
+.cardetails table{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+.cardetails table td{
+    border: #dcdcdc 2px solid;
+}
+.cardetails #first{
+    width:100px;
+}
+.cardetails #second{
+    width: 300px;
+}
+.p0{
+    font-size: 20px;
+}

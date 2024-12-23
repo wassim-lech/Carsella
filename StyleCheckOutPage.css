@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: O;
+    box-sizing: border-box;
+    font-family: 'Playfair+Display:ital' sans-serif;
+
+
+}
+body{
+    min-height: 100vh;
+    background:#2b2726;
+    background-size: cover;
+    background-position: center;
+    
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width:100%;
+    height: 100px;
+    padding: 20px 100 px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 100;
+}
+.logo{
+  top: 50px;
+  margin-left: 27px;
+}
+header.sticky
+{
+  padding: 6px 100px;
+  background:rgba(19, 18, 18, 0.7);
+  transition: .5s;
+
+}
+
+.navbar a{
+    position:relative;
+    font-size: 20px;
+    color:#a39e79;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 75px;
+    margin-left: 50px;
+    top: -33px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:0;
+    height: 2px;
+    background: lemonchiffon;
+    transition: .3s;
+
+}
+.navbar a:hover::before{
+    width: 100%;
+    color: rgb(192, 130, 16);
+}
+.banner h2{
+    text-align:center ;
+   }
+ .img1{
+     position: relative;
+     left: 150px;
+     margin-top: 100px;
+     margin-bottom: 300px;
+     
+ }
+ .container{
+     max-width: 1170px;
+     
+     margin: auto;
+ }
+ .row{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ ul{
+     list-style:none;
+ }
+ .footer{
+    
+    background-color:#524c47;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px; ;
+}
+.footer-col h4{
+    font-size: 21px;
+    color: lemonchiffon;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: lemonchiffon;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+   margin-bottom: 10px;
+}
+.footer-col ul li a{
+   font-size: 16px;
+   text-transform: capitalize;
+   color: lemonchiffon;
+   text-decoration: none;
+   font-weight: 300;
+   color: khaki;
+   display:block;
+   transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+ color: lemonchiffon;
+ padding-left: 10px;
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: #594b3d;
+    background-color: khaki;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    
+   transition: all 0.3s ease;
+
+}
+.footer-col .social-links a:hover{
+   color: #C7C1B3;
+   background-color: lemonchiffon;
+}
+@media(max-width:767px){
+
+}
+.copyright{
+    color: lemonchiffon;
+    text-align: center;
+    
+}
+.row hr{
+    opacity: 0.7;
+}
+
+
+    
+.box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px;
+   min-height: 100vh;
+   background-color:#2b2726;
+   position: relative;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   
+}
+.box form{
+    padding: 20px;
+    width: 700px;
+    background:#474537;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.box form .roww{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.box form .roww .col{
+    flex: 1 1 250px;
+}
+.box form .roww .col .title{
+    font-size: 25px;
+    color: rgb(236, 228, 228);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+}
+.box form .roww .col .inputbox{
+    margin:15px 0;
+}
+.box form .roww .col .inputbox span{
+    margin-bottom: 10px;
+    display: block;
+    color: #cec8a4;
+    font-size: 20px;
+}
+.box form .roww .col .inputbox input{
+    width: 100%;
+border: 2px solid #ccc;
+padding: 10px 15px;
+font-size: 15px;
+text-transform: none;
+}
+.box form .roww .col .inputbox input:focus{
+    border:1px solid #000;
+
+}
+.box form .roww .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.box form .roww .col .flex .inputbox{
+    margin-top: 5px;
+}
+.box form .roww .col .flex .inputbox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.box form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background:#a39e79;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.box form .submit-btn:hover{
+    background: #BC6C25;
+}
+
+
+
+

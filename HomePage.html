@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="StyleHomePage.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>Your Next Classic Car</h1>
+            <a href="http://">  Buy a Car</a>
+            <a href="">Sell Your Car</a>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="c:\Users\tassili\Downloads\hpmepagepic-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+     </video>
+     </div>
+     </div>
+
+  <header >
+    
+    <img class="logo" src="c:\Users\tassili\Downloads\Carsella-nobackground.svg"  alt="logo" width="95px">
+    
+    <nav class="navbar">
+       
+            <a href="http://">Home</a></li>
+            <a href="http://">Shop</a></li>
+            <a href="http://">Sell Yours</a></li>
+            <a href="http://">Contact Us </a></li>
+        
+    </nav>
+   
+ </header>  
+<br>
+<br>
+<br>
+
+ <section class="vehicule" id="vehicules">
+    <h1 class="heading">Featured <span>Cars</span></h1>
+
+    <div class="slider">
+        <div class="wrapper">
+            <i class="fa-solid fa-angle-left preNext" id="preBtn"></i>
+
+            <div class="wrapper-box">
+                <div class="box active">
+                    <img src="c:\Users\tassili\Downloads\Telegram Desktop\1962 Ferrari 250.png" alt="" >
+                    <div class="cont">
+                        <h3>Ferrari 250</h3>
+                        <div class="price">Price: <span>4,200,000$</span></div>
+                        <p>
+                            Classic
+                            <i class="fa-solid fa-circle"></i>1962
+                            <i class="fa-solid fa-circle"></i>Automatic
+                            <i class="fa-solid fa-circle"></i>petrol
+                            <i class="fa-solid fa-circle"></i>183mph
+                        </p>
+                        <a href="" class="btn">Check out</a>
+                    </div>
+                </div>
+                <div class="box ">
+                    <img src="c:\Users\tassili\Downloads\Telegram Desktop\1958 BMW 507.png" alt="" >
+                    <div class="cont">
+                        <h3>BMW 507</h3>
+                        <div class="price">Price: <span>1,500,000$</span></div>
+                        <p>
+                            Classic
+                            <i class="fa-solid fa-circle"></i>1958
+                            <i class="fa-solid fa-circle"></i>Automatic
+                            <i class="fa-solid fa-circle"></i>petrol
+                            <i class="fa-solid fa-circle"></i>183mph
+                        </p>
+                        <a href="" class="btn">Check out</a>
+                    </div>
+                </div>
+                <div class="box ">
+                    <img src="c:\Users\tassili\Downloads\Telegram Desktop\1961 Jaguar XK 150.png" alt="" >
+                    <div class="cont">
+                        <h3>Jaguar XK 150</h3>
+                        <div class="price">Price: <span>3,200,000$</span></div>
+                        <p>
+                            Classic
+                            <i class="fa-solid fa-circle"></i>1961
+                            <i class="fa-solid fa-circle"></i>Automatic
+                            <i class="fa-solid fa-circle"></i>petrol
+                            <i class="fa-solid fa-circle"></i>183mph
+                        </p>
+                        <a href="" class="btn">Check out</a>
+                    </div>
+                </div>
+                <div class="box ">
+                    <img src="c:\Users\tassili\Downloads\Telegram Desktop\1959 BMW 507.png" alt="" >
+                    <div class="cont">
+                        <h3>BMW 507</h3>
+                        <div class="price">Price: <span>3,200,000$</span></div>
+                        <p>
+                            Classic
+                            <i class="fa-solid fa-circle"></i>1959
+                            
+                            <i class="fa-solid fa-circle"></i> Automatic
+                            <i class="fa-solid fa-circle"></i>petrol
+                            <i class="fa-solid fa-circle"></i>183mph
+                        </p>
+                        <a href="" class="btn">Check out</a>
+                    </div>
+                </div>
+                <div class="box ">
+                    <img src="c:\Users\tassili\Downloads\Telegram Desktop\1971 Ferrari 365.png" alt="" >
+                    <div class="cont">
+                        <h3>Ferrari 365</h3>
+                        <div class="price">Price: <span>1,200,000$</span></div>
+                        <p>
+                            Classic
+                            <i class="fa-solid fa-circle"></i>1971
+                            <i class="fa-solid fa-circle"></i>Automatic
+                            <i class="fa-solid fa-circle"></i>petrol
+                            <i class="fa-solid fa-circle"></i>183mph
+                        </p>
+                        <a href="" class="btn">Check out</a>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+            </div>
+            
+            <i class="fa-solid fa-angle-right preNext " id="nextBtn"></i>
+
+        </div>
+        <div class="activeCircle">
+            <div class="fa-regular fa-solid fa-circle"></div>
+            <div class="fa-regular fa-circle"></div>
+            <div class="fa-regular fa-circle"></div>
+            <div class="fa-regular fa-circle"></div>
+            <div class="fa-regular fa-circle"></div>
+            <div class="fa-regular fa-circle"></div>
+            
+
+        </div>
+    </div>
+ </section>
+ <script>
+    let wrapper = document.querySelector('.wrapper-box');
+    let activeBox = wrapper.querySelectorAll('.box');
+    let activeLable =document.querySelector('.activeCircle').querySelectorAll('.fa-circle');
+    let nextBtn = document.querySelector('#nextBtn');
+    let preBtn = document.querySelector('#preBtn');
+    let indexNo =0;
+    nextBtn.onclick = ()=>{
+        indexNo++;
+        changeBox();
+    }
+    preBtn.onclick = ()=>{
+        indexNo--;
+        changeBox();
+    }
+    let changeBox = () =>{
+
+        if(indexNo > activeBox.length-1){
+            indexNo =0;
+        } else if(indexNo < 0){
+            indexNo = activeBox.length -1;
+        }
+
+        for(let i=0; i<activeBox.length;i++){
+            if(i ==indexNo){
+                activeBox[i].classList.add('active');
+                activeLable[i].classList.add('fa-solid');
+
+                wrapper.style.transform = `translateX(${indexNo* -250}px)`;
+
+            }
+            else{
+                activeBox[i].classList.remove('active');
+                activeLable[i].classList.remove('fa-solid');
+            }
+    
+        }
+    }
+
+
+ </script>
+ 
+ <section class="description">
+    <img class="background" src="c:\Users\tassili\Downloads\Abstract Smooth Brown wall.jpeg" alt="">
+   <h1 >V  I  N  T  A  G  E</h1>
+   <img class=photo src="c:\Users\tassili\Downloads\Large_Solid-Faced_Canvas_Print_Wall_Art_Print_entitled_Jaguar_XK120_Coupe_1952-removebg-preview.png" alt="jaguar">
+
+   <p>
+
+    Vintage cars evoke a sense of nostalgia and admiration for a bygone era of automotive design and craftsmanship. 
+     These classic automobiles,      typically produced between the early 1900s and the 1970s,
+      possess a timeless allure that captivates enthusiasts and collectors alike.      Vintage cars showcase a wide range of styles,
+      from the elegant curves of pre-war classics to the bold and powerful designs of mid-century muscle cars.</p>
+   
+
+
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+ <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    } )
+</script>
+<div class="section">
+    <div class="services-section">
+        <H2>Our Services</H2>
+        <p class="paragraph">"Welcome to CARSELLA, where passion meets performance. Explore our range of services designed to make your car-buying or car-selling experience unforgettable."</p>
+
+        <div class="cards">
+            <div class="card">
+            
+                <i class="fa-solid fa-car-rear"></i>
+                <div class="contenu">
+                <h3>Car Sales</h3>
+                <p>Browse through our extensive inventory of new and used cars from top manufacturers. Find the perfect vehicle that suits your needs and budget.</p>
+            </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-house-laptop"></i>
+                <div class="contenu">
+                <h3>Online sales&Delivery</h3>
+                <p>Shop for your next car conveniently from the comfort of your home with our online sales platform. Take advantage of home delivery options for added convenience.</p>
+            </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gauge-simple-high"></i>
+                <div class="contenu">
+                <h3>Vehicle Consignment Services</h3>
+                <p>Selling your car made easy with our vehicle consignment services. Let us handle the process of selling your car on your behalf. We'll market your vehicle, handle inquiries, and facilitate the sale, allowing you to get maximum value for your car with minimal effort.</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="testimonials">
+    <div class="container2">
+        <div class="section-header">
+            <h2 class="title">What Our Car Enthusiasts Say About Us</h2>
+
+        </div>
+        <div class="testimonials-content">
+            <div class=" swiper testimonials-slider js-testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="c:\Users\tassili\Downloads\drake.jpg" alt="">
+                            <div class="text-box">
+                                <h3 class="name"> Drake</h3>
+                                <span class="job">Rapper</span>
+                            </div>
+                        </div>
+                        <p>I recently used this car selling website to find a new vehicle, and I couldn't be happier with the results. The search filters were comprehensive, allowing me to narrow down my options based on specific criteria. The listings were detailed, with plenty of photos and information about each car. I was able to connect with sellers directly through the platform, which made the negotiation process convenient. Overall, it was a great experience</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                        <div class=" swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="c:\Users\tassili\Downloads\gojo.jpg" alt="">
+                                <div class="text-box">
+                                    <h3 class="name"> Gojo Satoru</h3>
+                                    <span class="job">Sorcerer</span>
+                                </div>
+                            </div>
+                            
+                            <p>I had a great experience selling my car through this website. The process was straightforward, and I appreciated the fact that I could reach a wide audience of potential buyers. The website provided guidance on pricing my car competitively, and I received multiple inquiries within the first week. The communication tools on the website made it easy to connect with interested buyers and negotiate the sale.</p>                            
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                
+                            </div>
+                            
+                        </div>
+                            <div class=" swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="c:\Users\tassili\Downloads\beany.jpg" alt="">
+                                    <div class="text-box">
+                                        <h3 class="name"> MR Bean</h3>
+                                        <span class="job">Comedian</span>
+                                    </div>
+                                </div>
+                                <p>Using this car selling website was a breeze. The platform was intuitive, and I was able to create a listing for my car within minutes. The website generated significant interest in my vehicle, and I received multiple offers in a short period. The website also provided helpful resources on ensuring a safe and secure transaction. I had a positive experience from start to finish and would highly recommend this website to anyone looking to buy or sell a car</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                                <div class=" swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="c:\Users\tassili\Downloads\queen.jpg" alt="">
+                                        <div class="text-box">
+                                            <h3 class="name"> ELisabeth</h3>
+                                            <span class="job">Queen of England</span>
+                                        </div>
+                                    </div>
+                                    <p>I had high expectations for this car selling website, and it did not disappoint. The platform was incredibly user-friendly, and I was able to list my car quickly and easily. What impressed me the most was the website's extensive network of buyers. I received numerous inquiries and ended up selling my car for a great price within a week. The website also provided excellent customer support throughout the process.</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        
+                                    </div>
+                                </div>
+                                    <div class=" swiper-slide testimonials-item">
+                                        <div class="info">
+                                            <img src="c:\Users\tassili\Downloads\chebkhaled.jpg" alt="">
+                                            <div class="text-box">
+                                                <h3 class="name"> Cheb Khaled</h3>
+                                                <span class="job">Singer</span>
+                                            </div>
+                                        </div>
+                                        <p>I recently purchased a car through this website, and I was thoroughly impressed with the overall experience. The website's search functionality allowed me to find exactly what I was looking for within my budget. The listings were detailed and included all the necessary information,. I am extremely satisfied with my purchase and would highly recommend this website to anyone in the market for a car</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                        
+                                 </div>
+                         </div>
+                         <div class="swiper-pagination js-testimonials-pagination"></div>
+                     </div>
+            </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.js-testimonials-slider', {
+        grabCursor: true,
+        spaceBetween:30,
+        pagination:{
+            el:'.js-testimonials-pagination',
+            clickable: true,
+        },
+        breakpoints:{
+            767:{
+                slidesPerView: 2
+            }
+        }
+    });
+</script>
+
+ <footer class="footer">
+     <div class="container">
+        <div  class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="http://">About Us</a></li>
+                    <li><a href="http://">Our Services</a></li>
+                    <li><a href="http://">Privacy Policy</a></li>
+                    <li><a href="http://">Affiliate Program</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="http://">FAQs</a></li>
+                    <li><a href="http://">Shippings</a></li>
+                    <li><a href="http://">Returns</a></li>
+                    <li><a href="http://">Order status</a></li>
+                    <li><a href="http://">Payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="http://">Classic cars</a></li>
+                    <li><a href="http://">Modern cars</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   
+                 <a href="http://"><i class="fab fa-facebook-f"></i></a>
+                 <a href="http://"><i class="fab fa-twitter"></i></a>
+                 <a href="http://"><i class="fab fa-instagram"></i></a>
+                 <a href="http://"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+                
+        </div>
+       
+     </div>
+     <br>
+     <br>
+     <br>
+     <hr>
+     <br>
+    <div class="row">
+        <div class="copyright">
+        <p>&copy; 2024 CARSELLA. All rights reserved.</p>
+        </div>
+    </div>
+ </div>
+ </footer>
+</body>
+</html>
